@@ -29,6 +29,7 @@ namespace EF6TestHarness
                 sw.Stop();
                 Console.WriteLine($"TermCount {counter} in {sw.ElapsedMilliseconds} ms");
             }
+            Console.WriteLine("Test Complete");
             Console.ReadLine();
         }
     }
