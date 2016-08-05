@@ -8,23 +8,13 @@ using System.Threading.Tasks;
 namespace CoreTestHarness
 {  
     public class TestModel
-    {
-       
+    {       
         [Key]
         [Required]
         [MaxLength(36)]
         public string RowKey { get; set; }
-          
-      
+               
         [MaxLength(200)]
-        public string Description { get; set; }
-
-     
-
-  
-
-  
-
-     
+        public string Description { get; set; }    
     }
 }

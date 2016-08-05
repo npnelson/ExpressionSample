@@ -6,10 +6,9 @@ using System.Threading.Tasks;
 
 namespace CoreTestHarness
 {
+    //https://petemontgomery.wordpress.com/2011/02/10/a-universal-predicatebuilder/
     public static class PredicateBuilder
-    {
-       
-
+    {       
         /// <summary>
         /// Creates a predicate that evaluates to false.
         /// </summary>

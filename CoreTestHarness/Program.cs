@@ -39,7 +39,7 @@ namespace CoreTestHarness
             var context = new TestDbContext(DbContextExtensions.GetDbContextOptions());
             context.Database.EnsureDeleted();
             context.Database.EnsureCreated();
-       //     context.LogToConsole();   uncomment this line if you want to see EF logging in console       
+       //   context.LogToConsole();   uncomment this line if you want to see EF logging in console       
             context.TestModels.Add(new TestModel { RowKey = "1", Description = "TEST" });
             context.SaveChanges();
             var sw = new Stopwatch();

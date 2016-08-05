@@ -17,8 +17,7 @@ namespace EF6TestHarness
             Console.ReadLine();
             var context = new TestDbContext("Server=(localdb)\\mssqllocaldb;Database=TestDBContext;Trusted_Connection=True;Connection Timeout=5");
             context.Database.Delete();
-            context.Database.CreateIfNotExists();
-            //     context.LogToConsole();          
+            context.Database.CreateIfNotExists();           
             context.TestModels.Add(new TestModel { RowKey = "1", Description = "TEST" });
             context.SaveChanges();
             var sw = new Stopwatch();

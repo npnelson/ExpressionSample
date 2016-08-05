@@ -3,12 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
 VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{B9F2A1BF-4DDA-4B6E-B8FD-E0193F072E3E}"
-	ProjectSection(SolutionItems) = preProject
-		..\global.json = ..\global.json
-	EndProjectSection
-EndProject
-Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "CoreTestHarness", "CoreTestHarness\CoreTestHarness.xproj", "{CD64EF51-972F-423F-8423-7279612D5584}"
+Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "EF7TestHarness", "CoreTestHarness\EF7TestHarness.xproj", "{CD64EF51-972F-423F-8423-7279612D5584}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EF6TestHarness", "EF6TestHarness\EF6TestHarness.csproj", "{0632C163-3E54-4AFB-A1C5-90904C414EC3}"
 EndProject
