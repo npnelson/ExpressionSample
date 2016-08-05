@@ -1,4 +1,5 @@
-﻿using Microsoft.EntityFrameworkCore;
+﻿using CoreTestHarness;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
@@ -8,7 +9,7 @@ using System.Diagnostics;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace CoreTestHarness
+namespace EF7TestHarness
 {
 
    
@@ -41,10 +42,10 @@ namespace CoreTestHarness
             context.Database.EnsureCreated();
        //   context.LogToConsole();   uncomment this line if you want to see EF logging in console       
             context.TestModels.Add(new TestModel { RowKey = "1", Description = "TEST" });
-            context.SaveChanges();
-            var sw = new Stopwatch();
+            context.SaveChanges();          
             for (var counter = 1; counter<=26; counter++)
             {
+                var sw = new Stopwatch();
                 sw.Start();
                 var descriptionString = Enumerable.Range(1, counter).Select(x=>$"T{x.ToString()}|").Aggregate((x, y) =>x+y); //Creates search terms like T1|T2|T3|....Tcounter                        
                 var recs = context.TestModels.Where(ClassifyFunctions.ContainsDescription(descriptionString.Split('|'))).ToList();
