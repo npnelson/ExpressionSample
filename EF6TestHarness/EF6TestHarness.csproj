@@ -52,13 +52,13 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="..\CoreTestHarness\ClassifyFunctions.cs">
+    <Compile Include="..\EF7TestHarness\ClassifyFunctions.cs">
       <Link>ClassifyFunctions.cs</Link>
     </Compile>
-    <Compile Include="..\CoreTestHarness\PredicateBuilder.cs">
+    <Compile Include="..\EF7TestHarness\PredicateBuilder.cs">
       <Link>PredicateBuilder.cs</Link>
     </Compile>
-    <Compile Include="..\CoreTestHarness\TestModel.cs">
+    <Compile Include="..\EF7TestHarness\TestModel.cs">
       <Link>TestModel.cs</Link>
     </Compile>
     <Compile Include="Program.cs" />
