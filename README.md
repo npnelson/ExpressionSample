@@ -1,5 +1,5 @@
 # ExpressionSample
-repo for possible .NET core or EFCore Bug
+repo for possible EntityFramework Core Bug
 
 <b>This sample requires the installation of SQL LocalDb</b>.  I used SQL2016 LocalDb.
 
